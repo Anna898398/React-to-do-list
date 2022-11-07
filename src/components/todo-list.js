@@ -17,12 +17,13 @@ export default function TodoList(props) {
                         <th>Описание дела</th>
                         <th>Теги</th>
                         <th>Приоритет дела</th>
+                        <th>Удалить</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     {props.list.map((item, index) => (
-                        <TodoListItem 
+                        <TodoListItem
                             item = {item}
                             index = {index + 1}
                             key = {index}>                        

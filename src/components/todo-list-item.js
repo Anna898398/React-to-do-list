@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import Button from 'react-bootstrap/Button';
+
 export default function TodoListItem(props) {
     return (   
         <tr>
@@ -9,6 +11,9 @@ export default function TodoListItem(props) {
             <td>{props.item.date}</td>
             <td>{props.item.tags}</td>
             <td>{props.item.priority}</td>
+            <td>
+                <Button>-</Button>
+            </td>
         </tr>
     );
 }
