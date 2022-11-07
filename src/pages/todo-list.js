@@ -1,4 +1,6 @@
 import Table from 'react-bootstrap/Table';
+import TodoListItem from './todo-list-item.js';
+import './todo-list-css.css';
 
 export default function TodoList() {
 
@@ -6,10 +8,19 @@ export default function TodoList() {
         {
             "num": 1,
             "name": "Сделать диплом",
-            "date": "28.11.2022",
+            "date": "11:00:11",
             "description": "Подготовит дипломную работу",
             "tags": ["#учеба #frontend"],
             "priority": "Высокий"
+        },
+
+        {
+            "num": 2,
+            "name": "Приготовить обед",
+            "date": "12:00:11",
+            "description": "Описание обеда",
+            "tags": ["#еда #рецепты #суп"],
+            "priority": "Средний"
         },
         
     ];
@@ -20,7 +31,7 @@ export default function TodoList() {
 
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th className='num'>#</th>
                         <th>Название дела</th>
                         <th>Дата/время исполнения</th>
                         <th>Описание дела</th>
@@ -30,16 +41,14 @@ export default function TodoList() {
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>{list[0].num}</td>
-                        <td>{list[0].name}</td>
-                        <td>{list[0].date}</td>
-                        <td>{list[0].description}</td>
-                        <td>{list[0].tags}</td>
-                        <td>{list[0].priority}</td>
-                    </tr>
+                {list.map((item, index) => (
+                    <TodoListItem 
+                        item = {item}
+                        index = {index + 1}
+                        key = {index}>                        
+                    </TodoListItem>
+                    ))}
                 </tbody>
-
             </Table>
         </div>
     );
