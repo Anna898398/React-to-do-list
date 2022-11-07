@@ -1,0 +1,19 @@
+th {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: rgb(180, 180, 180);
+}
+
+td {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.num {
+    width: 20px;
+    text-align: center;
+}
