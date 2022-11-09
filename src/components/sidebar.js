@@ -6,8 +6,8 @@ export default function Sidebar() {
     return (   
 
         <div>   
-            {/* <SidebarItem name="ToDoList"></SidebarItem>   
-            <SidebarItem name="ToDoListProject"></SidebarItem>    */}            
+            <SidebarItem name="ToDoList"></SidebarItem>   
+            <SidebarItem name="ToDoListProject"></SidebarItem>               
         </div>
     );
 }

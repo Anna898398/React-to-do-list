@@ -1,5 +1,5 @@
 th {
-    width: auto;
+    width: 200px;
     text-align: center;
     padding: 10px;
     border: 1px solid grey;
@@ -16,4 +16,34 @@ td {
 .num {
     width: 20px;
     text-align: center;
+}
+
+.сom {
+    width: 90px;
+}
+
+.del {
+    width: 90px;
+}
+
+.btn-com {
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-com:hover {
+    background-color: rgba(66, 255, 49, 0.432);
+}
+
+.btn-del {
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+Button:hover {
+    background-color: rgba(255, 49, 49, 0.432);
 }

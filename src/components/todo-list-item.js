@@ -11,8 +11,14 @@ export default function TodoListItem(props) {
             <td>{props.item.date}</td>
             <td>{props.item.tags}</td>
             <td>{props.item.priority}</td>
-            <td>
-                <Button>-</Button>
+            <td>{props.item.status}</td>
+
+            <td className='com'>
+                <Button className='btn-com' onClick={() => props.closeTask(props.index - 1)}>&#10004;</Button>
+            </td>
+
+            <td className='del'>
+                <Button className='btn-del' onClick={() => props.removeItem(props.index - 1)}>&#128465;</Button>
             </td>
         </tr>
     );
