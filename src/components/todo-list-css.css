@@ -44,6 +44,6 @@ td {
     border-radius: 3px;
 }
 
-Button:hover {
+.btn-del:hover {
     background-color: rgba(255, 49, 49, 0.432);
 }

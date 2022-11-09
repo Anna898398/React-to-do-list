@@ -49,6 +49,7 @@ export default function TodoListPages() {
         <TodoList 
             list={list}
             removeItem={removeItem}
+            closeTask={closeTask}
         ></TodoList>
     );    
 }

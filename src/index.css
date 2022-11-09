@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hide {
+    display: none;
+    /* border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px; */
+}
+
+.hide:hover {
+  background-color: rgba(66, 255, 49, 0.432);
+}

@@ -18,7 +18,7 @@ export default function TodoList(props) {
                         <th>Теги</th>
                         <th>Приоритет дела</th>
                         <th>Статус</th>
-                        <th className='сom' id='status'>Завершить</th>
+                        <th className='сom'>Завершить</th>
                         <th className='del'>Удалить</th>
                     </tr>
                 </thead>
@@ -30,6 +30,7 @@ export default function TodoList(props) {
                             index = {index + 1}
                             key = {index}
                             removeItem={props.removeItem}
+                            closeTask={props.closeTask}
                         >                        
                         </TodoListItem>                        
                     ))}
